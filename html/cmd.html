@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>Portal for QA</title>
-      <link rel="stylesheet" type="text/css" href="../css/style.css">
-      <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
-      <link rel="shortcut icon" href="../img/fav.ico" type="image/x-icon">
-      <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-   </head>
-   <body>
-      <!--Card-->
-      <div class="card animated fadeIn">
-         <p class="subtitle">Командная строка Windows</p>
-         <h3 id="rt-0"> Управление файлами и папками</h3>
-         <ul>
-            <li>COPY – Копирование файлов в другое место</li>
-            <li>DIR – Изменить каталог</li>
-            <li>CD – Отображение файлов и папок в текущем каталоге</li>
-            <li>MAKEDIR – Создать папку</li>
-            <li>MOVE – Переместить файлы из одной папки в другую</li>
-         </ul>
-         <h3 id="rt-1">Приложения и процессы</h3>
-         <ul>
-            <li>TASKLIST – Список выполняемых задач</li>
-            <li>TASKKILL – Остановить или прекратить выполнение задачи (для остановки задачи используется PID, который можно узнать из TASKLIST).</li>
-         </ul>
-         <h3 id="rt-3">Системная информация</h3>
-         <ul>
-            <li>DATE – Выводит или устанавливает системное время</li>
-            <li>TIME – Выводит или устанавливает текущую дату</li>
-            <li>HOSTNAME – Отображает имя компьютера</li>
-            <li>SYSTEMINFO – Отображает информацию о конфигурации компьютера</li>
-            <li>VER – Позволяет просмотреть версию Windows</li>
-         </ul>
-      </div>
-      <!--footer-->
-      <footer class="animated fadeIn">
-         &copy; 202 4. SkyPro
-      </footer>
-   </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портал QA</title>
+     <!-- Стили и шрифты -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+    <!-- Иконка вкладки -->
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Карточка с информацией -->
+    <div class="card animated fadeIn">
+        <p class="subtitle">Командная строка Windows</p>
+        
+        <h3 id="rt-0">Управление файлами и папками</h3>
+        <ul>
+            <li><strong>COPY</strong> – Копирование файлов в другое место</li>
+            <li><strong>DIR</strong> – Отображение файлов и папок в текущем каталоге</li>
+            <li><strong>CD</strong> – Изменение текущего каталога</li>
+            <li><strong>MD</strong> (или MAKEDIR) – Создание новой папки</li>
+            <li><strong>MOVE</strong> – Перемещение файлов из одной папки в другую</li>
+        </ul>
+
+        <h3 id="rt-1">Приложения и процессы</h3>
+        <ul>
+            <li><strong>TASKLIST</strong> – Вывод списка выполняемых задач</li>
+            <li><strong>TASKKILL</strong> – Завершение выполнения задачи (используется PID из TASKLIST)</li>
+        </ul>
+
+        <h3 id="rt-2">Системная информация</h3>
+        <ul>
+            <li><strong>DATE</strong> – Установка или отображение системной даты</li>
+            <li><strong>TIME</strong> – Установка или отображение системного времени</li>
+            <li><strong>HOSTNAME</strong> – Отображение имени компьютера</li>
+            <li><strong>SYSTEMINFO</strong> – Информация о конфигурации системы</li>
+            <li><strong>VER</strong> – Версия операционной системы Windows</li>
+        </ul>
+    </div>
+
+   <!-- Футер -->
+    <footer class="animated fadeIn">
+        <p class="location text-center">
+            <a href="../index.html">Вернуться на главную</a>
+        </p>
+        &copy; 2024 SkyPro
+    </footer>
+</body>
 </html>
